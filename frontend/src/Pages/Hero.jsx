@@ -23,7 +23,7 @@ const Hero = () => {
     if (initialLoading) {
         return (
             <div className='flex items-center justify-center w-full h-screen bg-black'>
-                <h1 className='text-lg md:text-3xl lg:text-4xl font-bold text-white animate-pulse'>
+                <h1 className='text-lg font-bold text-white md:text-3xl lg:text-4xl animate-pulse'>
                     🚀 Welcome... Preparing Images!
                 </h1>
             </div>
@@ -82,9 +82,9 @@ const Hero = () => {
 
     return (
         <div className='flex flex-col items-center w-[100%] min-h-screen pb-10 bg-gradient-to-r from-green-800 to-blue-900'>
-            <div className='mt-10 max-w-2xl w-full'>
-                <h1 className='text-2xl md:text-3xl font-bold text-center text-green-500 '>Image Search</h1>
-            <form onSubmit={handleSearch} className='mt-5 w-full relative'>
+            <div className='w-full max-w-2xl mt-10'>
+                <h1 className='text-2xl font-bold text-center text-green-500 md:text-3xl '>Image Search</h1>
+            <form onSubmit={handleSearch} className='relative w-full mt-5'>
                 <input
                     type="text"
                     ref={searchInput}
@@ -95,11 +95,11 @@ const Hero = () => {
                 <FiX className='absolute text-xl cursor-pointer top-4 right-4' onClick={handleClear} />
             </form>
 
-            <div className='flex items-center gap-3 mt-5'>
+            <div className='flex items-center justify-center gap-3 mt-5 '>
                 {['Nature', 'Birds', 'Cats', 'Shoes'].map((item) => (
                     <button
                         key={item}
-                        className='w-24 px-4 py-2 font-semibold bg-yellow-500 hover:bg-cyan-300 hover:text-red-700 rounded-xl'
+                        className='w-32 px-4 py-2 font-semibold bg-yellow-500 hover:bg-cyan-300 hover:text-red-700 rounded-xl'
                         onClick={() => handleSelection(item)}
                     >
                         {item}
@@ -116,8 +116,8 @@ const Hero = () => {
                 <div className='grid grid-cols-2 gap-4 mt-20 md:grid-cols-3 lg:grid-cols-4 '>
                     {images.map((img) => (
                         <div key={img.id} className='p-2 bg-white border-2 shadow h-80 border-lime-500 rounded-xl'>
-                            <img src={img.urls.small} alt={img.alt_description} className='object-cover w-full rounded-lg h-56' />
-                            <p className='mt-7 text-xl font-bold text-center text-orange-700'>{img.user.name}</p>
+                            <img src={img.urls.small} alt={img.alt_description} className='object-cover w-full h-56 rounded-lg' />
+                            <p className='text-xl font-bold text-center text-orange-700 mt-7'>{img.user.name}</p>
                         </div>
                     ))}
                 </div>
