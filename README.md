@@ -49,3 +49,12 @@
 ├── vite.config.js      # Vite config
 └── package.json        # Project metadata and dependencies
 
+----
+---
+
+## 📸 Preview Screenshot
+
+Here is a preview of the homepage interface:
+
+![Homepage Preview](./src/assets/home_preview.png)
+
