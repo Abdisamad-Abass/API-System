@@ -88,7 +88,7 @@ const Hero = () => {
                 </h3>
 
                 <h1 className='text-2xl font-bold text-center text-green-500 md:text-3xl '>Image Search</h1>
-            <form onSubmit={handleSearch} className='relative w-full mt-5'>
+            <form onSubmit={handleSearch} className='relative w-full mt-5 px-2'>
                 <input
                     type="text"
                     ref={searchInput}
@@ -117,7 +117,7 @@ const Hero = () => {
 
             {/* Image Results */}
             {images.length > 0 && (
-                <div className='grid grid-cols-2 gap-4 mt-20 md:grid-cols-3 lg:grid-cols-4 '>
+                <div className='grid grid-cols-2 gap-4 mt-20 px-3 md:grid-cols-3 lg:grid-cols-4 '>
                     {images.map((img) => (
                         <div key={img.id} className='p-2 bg-white border-2 shadow h-80 border-lime-500 rounded-xl'>
                             <img src={img.urls.small} alt={img.alt_description} className='object-cover w-full h-56 rounded-lg' />
