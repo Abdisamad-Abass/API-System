@@ -55,5 +55,4 @@ Here is a preview of the homepage interface:
 ├── vite.config.js      # Vite config
 └── package.json        # Project metadata and dependencies
 
----
 
