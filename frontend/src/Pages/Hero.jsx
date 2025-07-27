@@ -83,7 +83,7 @@ const Hero = () => {
     return (
         <div className='flex flex-col items-center w-[100%] min-h-screen pb-10 bg-gradient-to-r from-green-800 to-blue-900'>
             <div className='w-full max-w-2xl mt-10'>
-                <h3 class="text-sm md:text-xl font-semibold text-center mt-10 flex items-center justify-center animate-fade-in-up">
+                <h3 className="text-sm md:text-xl font-semibold text-center mt-10 flex items-center justify-center animate-fade-in-up">
                 🚀 I, Abdisamad Abass, warmly welcomes you to this system — My Shadow.
                 </h3>
 
