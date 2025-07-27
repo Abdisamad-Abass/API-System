@@ -84,7 +84,7 @@ const Hero = () => {
         <div className='flex flex-col items-center w-[100%] min-h-screen pb-10 bg-gradient-to-r from-green-800 to-blue-900'>
             <div className='w-full max-w-2xl mt-10'>
                 <h3 class="text-xl font-semibold text-center mt-10 flex items-center justify-center animate-fade-in-up">
-                🚀 I, Abdisamad Abass, warmly welcome you to this system — My Shadow.
+                🚀 I, Abdisamad Abass, warmly welcomes you to this system — My Shadow.
                 </h3>
 
                 <h1 className='text-2xl font-bold text-center text-green-500 md:text-3xl '>Image Search</h1>
