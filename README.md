@@ -24,6 +24,12 @@
 - 🎨 Styled with Tailwind CSS
 
 ---
+## 📸 Preview Screenshot
+
+Here is a preview of the homepage interface:
+<p align="center"> <img src="frontend/src/assets/home_preview.png" alt="Home Preview" width="700" /> </p>
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -49,12 +55,5 @@
 ├── vite.config.js      # Vite config
 └── package.json        # Project metadata and dependencies
 
-----
 ---
-
-## 📸 Preview Screenshot
-
-Here is a preview of the homepage interface:
-
-![Homepage Preview](./src/assets/home_preview.png)
 
